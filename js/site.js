@@ -278,8 +278,8 @@ function generateDoc(){
         var cust_array = [
             [i_seq + i_name, i_phone, "Status"],
             [doc.Merge.CC, doc.Merge.CC, i_addr],
-            [doc.Merge.CC, "Total Price: ", i_totalPrice],
-            [doc.Merge.CC, doc.Merge.CC, i_remark]
+            [doc.Merge.CC, "Total Price: ", i_totalPrice]
+            //[doc.Merge.CC, doc.Merge.CC, "Remark:" + i_remark]
         ];
         $(o_id + " .cust_order_item").each(
             function(key,item){
@@ -290,6 +290,7 @@ function generateDoc(){
                 cust_array.push(tempAy);
             }
         );
+        cust_array.push([doc.Merge.CC, doc.Merge.CC, "Remark:" + i_remark]);
         doc.addTable(cust_array);
         doc.newLine();
     }
