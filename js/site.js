@@ -276,7 +276,7 @@ function generateDoc(){
         var i_remark = $(o_id + " [data-type = remark]").text();
         var i_totalPrice = $(o_id + " #tq_cust_orders_price").text();
         var cust_array = [
-            [i_seq + i_name, i_phone, "Status"],
+            [i_seq + i_name, i_phone, "Package"],
             [doc.Merge.CC, doc.Merge.CC, i_addr],
             [doc.Merge.CC, "Total Price: ", i_totalPrice]
             //[doc.Merge.CC, doc.Merge.CC, "Remark:" + i_remark]
