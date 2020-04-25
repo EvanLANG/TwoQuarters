@@ -134,7 +134,7 @@ function addOrder(){
     var order_item = "<div id='cust_order_" + prod_id +"' class='cust_order_item'>" +
     "<p class = 'tq-6-col' data-type='pName'>"+ p_name + "</p>" +
     "<p class = 'tq-3-col' data-type='pPrice'> Price: "+ p_price + "</p>"+
-    "<p class = 'tq-3-col' data-type='pQuan'> Quantity: " + prod_quan +"</p>"+
+    "<p class = 'tq-3-col' data-type='pQuan'> Qty: " + prod_quan +"</p>"+
     "</div>";
 
     
