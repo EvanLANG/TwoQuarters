@@ -1,4 +1,5 @@
-﻿//=============================================================================
+//=============================================================================
+// v 1.1.5
 // Some global constants
 //=============================================================================
 var tqProducts = {
@@ -143,6 +144,7 @@ function addOrder(){
     $("#tq_cust_orders").append(order_item);
     custOrder[prod_id] = prod_quan;
     //totalPrice +=  parseInt(p_price) * parseInt(prod_quan); 
+    calcOrder();
 }
 function deleOrder(){
     var prod_id = $("#tq_prod").val();
@@ -162,7 +164,7 @@ function generateMenuDropdown(){
 }
 
 function calcOrder(){
-    console.log(custOrder);
+    //console.log(custOrder);
     var price = 0;
     for(i=1; i < 100;i++){
         if(custOrder[i] !== undefined){
@@ -340,6 +342,6 @@ function deleFromTotalOrders(){
 
         }
     );
-    console.log(totalOrders);
+    // console.log(totalOrders);
 }
 
